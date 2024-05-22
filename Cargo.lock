@@ -313,6 +313,23 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "41c270e7540d725e65ac7f1b212ac8ce349719624d7bcff99f8e2e488e8cf03f"
 
 [[package]]
+name = "cf-workers-gql-demo"
+version = "0.1.0"
+dependencies = [
+ "async-graphql",
+ "async-graphql-axum",
+ "axum",
+ "reqwest",
+ "serde",
+ "serde_json",
+ "tower-http",
+ "tower-service",
+ "wasm-bindgen-futures",
+ "worker",
+ "worker-macros",
+]
+
+[[package]]
 name = "cfg-if"
 version = "1.0.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -2054,23 +2071,6 @@ dependencies = [
  "wasm-bindgen-futures",
  "wasm-bindgen-macro-support",
  "worker-sys",
-]
-
-[[package]]
-name = "worker-rust"
-version = "0.1.0"
-dependencies = [
- "async-graphql",
- "async-graphql-axum",
- "axum",
- "reqwest",
- "serde",
- "serde_json",
- "tower-http",
- "tower-service",
- "wasm-bindgen-futures",
- "worker",
- "worker-macros",
 ]
 
 [[package]]
